@@ -57,13 +57,3 @@ Contributions are welcome! If you would like to contribute to this project, plea
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
-
-## Acknowledgments
-
-- [List of libraries, models, or resources you used]
-- [Credits to authors, if applicable]
-
-## Contact
-
-If you have any questions or want to report an issue, please feel free to contact us at [your-email@example.com].
-
