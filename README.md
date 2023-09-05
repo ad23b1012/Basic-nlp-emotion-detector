@@ -1,5 +1,6 @@
 # Emotion Detection NLP with Flask
-<img width="1552" alt="Screenshot 2023-09-05 at 13 09 30" src="https://github.com/PraveenLiyanage/Emotion-Detection-NLP-Project/assets/111709030/cd3a02d8-7bfc-4f3c-b14d-62c036df25fc">
+
+<img width="1552" alt="Screenshot 2023-09-05 at 13 21 13" src="https://github.com/PraveenLiyanage/Emotion-Detection-NLP-Project/assets/111709030/38010bfb-3c78-4345-bcea-9ceb0d7f7fe1">
 
 ## Overview
 
