@@ -1,6 +1,6 @@
 /* Custom CSS for Emotion Detection Interface */
 
-/* styles.css */
+/* Background Image */
 body {
     background-image: url('https://images.unsplash.com/photo-1554110397-9bac083977c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80'); 
     background-size: cover;
@@ -12,49 +12,66 @@ body {
     min-height: 100vh;
 }
 
-
+/* Container */
 .container {
-    max-width: 600px; /* Adjust container width as needed */
+    max-width: 600px;
 }
 
+/* Card Styling */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9); /* Adjust the alpha value (0.0 to 1.0) for transparency */
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-
+/* Headings */
 h1 {
     font-size: 28px;
-    color: #333; /* Dark gray text color */
+    color: #333;
+    text-align: center;
 }
 
+/* Labels */
 label {
     font-weight: bold;
     color: #333;
 }
 
+/* Textarea */
 textarea.form-control {
-    resize: none; /* Disable textarea resizing */
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
 }
 
+/* Button Styling */
 .btn-primary {
-    background-color: #007bff; /* Primary button color */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
     border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
-.text-center {
-    text-align: center;
-}
-
-/* Emotion detection result styling */
+/* Emotion Result Styling */
 #system_response {
     font-size: 18px;
     font-weight: bold;
-    color: #28a745; /* Green text for positive results */
+    color: #28a745;
+    text-align: center;
+    margin-top: 10px;
 }

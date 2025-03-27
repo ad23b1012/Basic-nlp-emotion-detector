@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emotion Detection</title>
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./static/mywebscript.css"> <!-- Create a separate CSS file for custom styling -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='mywebscript.css') }}">
 </head>
 <body>
     <div class="container mt-5">
@@ -18,7 +22,7 @@
                 </div>
 
                 <div class="text-center">
-                    <button onclick="RunSentimentAnalysis()" class="btn btn-primary">Run Emotion Detection</button>
+                    <button onclick="analyzeEmotion()" class="btn btn-primary">Run Emotion Detection</button>
                 </div>
 
                 <div class="mt-4">
@@ -30,5 +34,24 @@
             </div>
         </div>
     </div>
+
+    <!-- JavaScript -->
+    <script>
+        function analyzeEmotion() {
+            let text = document.getElementById("textToAnalyze").value;
+            fetch("/process", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ text: text })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("system_response").innerText = "Emotion: " + data.emotion;
+            })
+            .catch(error => console.error("Error:", error));
+        }
+    </script>
 </body>
 </html>
